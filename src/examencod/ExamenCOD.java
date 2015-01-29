@@ -1,4 +1,3 @@
-
 package examencod;
 
 public class ExamenCOD {
@@ -7,28 +6,32 @@ public class ExamenCOD {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
- int iN = 11;
-            	if (metodoMio(iN))
-System.out.println("Es numero primo");
-else
- System.out.println("NO es numero primo");           	 
-          	 
-for (int x=2;x<1000;x++) {
-if (metodoMio(x))
-System.out.print(x + " ");                         	 
-}         	 
-	}
+        int iN = 11;
+        if (metodoMio(iN)) {
+            System.out.println("Es numero primo");
+        } else {
+            System.out.println("NO es numero primo");
+        }
+
+        for (int x = 2; x < 1000; x++) {
+            if (metodoMio(x)) {
+                System.out.print(x + " ");
+            }
+        }
+    }
     //para  variable=16 y j=2 aux=false
     //para variable 22 Y j=2 aux=false
-public static boolean metodoMio(int variable){
-int j = 2;
-boolean aux=true;
-while ((aux) && (j!=variable)){
-if (variable % j == 0)
-aux = false;
-j++;
-}
-return aux;
-  } 	 
-    
+
+    public static boolean metodoMio(int variable) {
+        int j = 2;
+        boolean aux = true;
+        while ((aux) && (j != variable)) {
+            if (variable % j == 0) {
+                aux = false;
+            }
+            j++;
+        }
+        return aux;
+    }
+
 }
