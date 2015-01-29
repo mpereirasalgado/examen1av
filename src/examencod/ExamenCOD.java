@@ -19,8 +19,8 @@ public class ExamenCOD {
             }
         }
     }
-    //para  variable=16 y j=2 aux=false
-    //para variable 22 Y j=2 aux=false
+    //para  variable = 16 y j = 2 aux=false
+    //para variable = 22 Y j = 21 aux=true
 
     public static boolean metodoMio(int variable) {
         int j = 2;
